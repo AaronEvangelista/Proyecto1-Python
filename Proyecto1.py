@@ -20,10 +20,11 @@ es_internacional = True
 # Solicitar datos al usuario
 nombre = input("Ingresa tu nombre: ")
 edad = int(input("Ingresa tu edad: "))
+print(totalProducto)
 producto = input("Ingresa el producto que deseas comprar: ")
 
 # Operadores aritméticos
-precio_producto = 350  # Precio fijo para el ejemplo de venta
+precio_producto = 950.50 # Precio fijo para el ejemplo de venta
 descuento = 0.15  # 15% de descuento si el cliente es mayor de 18 años
 precio_final = precio_producto - (precio_producto * descuento) if edad >= 18 else precio_producto
 
@@ -37,4 +38,30 @@ print(f"Edad: {edad}")
 print(f"Producto seleccionado: {producto}")
 print(f"Precio final: ${precio_final}")
 print("¿Puede comprar?:", "Sí" if puede_comprar else "No")
+
+
+# Lista de productos
+productos = ["Samsung ", "iPhone", "Xiaomi"]
+precios = [799.99, 999.99, 599.99]
+totalProducto =  productos + precios
+
+
+# nuevas ofertas 
+productos.add("Oppo")
+print(productos)
+
+# productos elimandos
+productos.remove("Xiaomi")
+
+# lista ordenada 
+print(productos.sort())
+
+
+# tupla 
+producto_tuple = tuple()
+print(producto_tuple)
+
+ 
+
+
 
